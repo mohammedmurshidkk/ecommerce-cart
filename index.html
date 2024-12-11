@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.cdnfonts.com/css/hvdtrial-brandon-grotesque"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cart Drawer</title>
+  </head>
+  <body>
+    <button id="openCartBtn" style="margin: 16px">Open Cart</button>
+
+    <div class="cart-drawer open" id="cartDrawer">
+      <div class="cart-header">
+        <h2>YOUR BAG</h2>
+        <div class="items-info">
+          <div class="total">
+            <span id="totalItems">0 Items </span>
+            <h3 id="totalPriceHeader">Rs 0 /-</h3>
+          </div>
+          <button class="close-btn" id="closeCartBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              viewBox="0 0 40 40"
+            >
+              <path
+                fill="#37383A"
+                d="M20.725 20L34.493 6.216a.516.516 0 0 0 0-.726a.526.526 0 0 0-.727.001L20 19.274L6.232 5.49a.53.53 0 0 0-.726 0a.515.515 0 0 0 0 .725L19.275 20L5.507 33.784a.513.513 0 1 0 .725.725L20 20.726L33.767 34.51a.513.513 0 0 0 .726-.725z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="cart-items" id="cartItemsContainer"></div>
+
+      <div class="recommendations" id="recommendationsContainer">
+        <h3>YOU MIGHT ALSO LIKE</h3>
+      </div>
+
+      <div class="cart-footer">
+        <div class="summary">
+          <span>Total</span>
+          <span id="totalPrice">₹0</span>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
